@@ -24,6 +24,21 @@
       </div>
     </div>
     <script>
+	const firebaseConfig = {
+		  apiKey: "AIzaSyDvjo6oMWxhWWzsI5Ln6WACgrB-rlwF6_U",
+		  authDomain: "brixel-3cb27.firebaseapp.com",
+		  databaseURL: "https://brixel-3cb27-default-rtdb.europe-west1.firebasedatabase.app",
+		  projectId: "brixel-3cb27",
+		  storageBucket: "brixel-3cb27.firebasestorage.app",
+		  messagingSenderId: "359753985613",
+		  appId: "1:359753985613:web:c9a737f3859963b7be7604"
+		};
+		
+	firebase.initializeApp(firebaseConfig);
+	
+	// Сохраняем экземпляр Unity для обратных вызовов
+	window.unityInstance = unityInstance;
+		
       var canvas = document.querySelector("#unity-canvas");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
